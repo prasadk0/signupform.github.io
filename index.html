@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contactus.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        :root{
+    --primary:#933ded;
+    --dark:#232323;
+    --pure:#fff;
+    --smoke:whitesmoke;
+    --dark-gray:#999;
+}
+        body{
+            width: 100%;
+            max-width: 1158px;
+            margin: 0 auto;
+            padding: 3rem auto;
+          
+               height: 100vh;
+            background-color: var(--dark);
+            color: var(--pure);
+        }
+        .container{
+          
+            margin-top: 5rem;
+            height: 600px;
+            width: 100%;
+            max-width: 1158px;
+             display: grid; 
+            /* place-items: center; */
+            /* place-self: center; */
+            /* justify-items: center; */
+            /* place-items: center; */
+            /* justify-content: center; */
+            /* align-content: center; */
+          
+        
+            /* place-items: center; */
+        grid-template-columns: repeat(3,1fr);
+        /* grid-auto-rows: 75px; */
+        grid-template-rows: repeat(2,1fr);
+            background-color: var(--dark-gray);
+        }
+        .item1{
+            display: grid;
+            /* text-align: center; */
+            /* justify-content: center;
+            align-items: center;
+            /* place-items: center; */
+            /* padding: 2rem 2rem;
+            margin: 5rem 3rem; */
+            grid-area: 1/1/3/3;
+            /* position: relative; */
+            margin: 0 5rem;
+            background-color: var(--primary);
+            /* width: 200px; */
+        }
+        .item2{
+             padding: 0rem 2rem;
+            /* background-color: black;  */
+            
+        } 
+        .item3{
+            padding: 2rem 2rem;
+            
+        }
+        h1{
+            margin: 1rem 1rem;
+        }
+        input[type="text"]{
+            margin-bottom: 1rem;
+            padding: 1rem 1rem;
+            outline: none;
+            border-color: var(--primary);
+            background-color: var(--primary);
+            width: 100%;
+            border-bottom: 1px solid var(--dark);
+            /* position: absolute; */
+            color: whitesmoke;
+        }
+        input[type="password"]{
+            margin-bottom: 1rem;
+            padding: 1rem 1rem;
+            outline: none;
+            border-color: var(--primary);
+            background-color: var(--primary);
+            width: 100%;
+            border-bottom: 1px solid var(--dark);
+            color: whitesmoke;
+            /* position: absolute; */
+        }
+        .container{
+            background-color: var(--primary);
+        }
+        ::placeholder{
+            color: white;
+
+        }
+        button{
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        .no{
+            margin-bottom: 0;
+        }
+        @media (max-width:900px){
+            .container{
+                display: block;
+            }
+            .item2{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="item1">
+        <div class="form">
+            <h1>  <strong>Sign Up</strong></h1>
+             <div class="item">
+              <div class="text text1"></div>
+              <div class="input" ><input type="text" placeholder="Mail"></div>
+             </div>
+             <div class="item">
+              <div class="text"> </div>
+              <div class="input"><input type="password" placeholder="Password"></div>
+              <div class="input"><input type="password" placeholder="Confirm Password"></div> 
+              <div class="item">
+                <button onclick="fun()">Sign Up</button><button class="no">Reset</button> 
+            </div>
+             </div>
+           <!--  in script  have to insert fun() -->
+          </div>
+       </div>
+       <div class="item2"><img src="signup.png" alt=""></div>
+     
+       <!-- <div class="item4">item4</div>
+       <div class="item5">item5</div> -->
+    </div>
+</body>
+</html>
